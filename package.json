@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kamalpandey/react-native-image-slider-show.git"
+    "url": "git+https://github.com/DevilxDude/react-native-image-slider-show.git"
   },
   "keywords": [
     "react",
     "native",
     "slideshow"
   ],
-  "author": "Kamal Pandey",
+  "author": "Devil Dude",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kamalpandey/react-native-image-slider-show/issues"
+    "url": "https://github.com/DevilxDude/react-native-image-slider-show/issues"
   },
-  "homepage": "https://github.com/kamalpandey/react-native-image-slider-show#readme"
+  "homepage": "https://github.com/DevilxDude/react-native-image-slider-show#readme"
 }

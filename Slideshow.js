@@ -21,7 +21,7 @@ const minorVersion = +splitVersion[1];
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    backgroundColor: '#222',
+    backgroundColor: '#f0a8bb',
   },
   layoutIndicator: {
     height: 15,
