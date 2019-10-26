@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import {
+import ReactNative, {
   Image,
   Text,
   View,
@@ -11,6 +11,7 @@ import {
   TouchableHighlight,
   TouchableOpacity,
   Dimensions,
+  Platform
 } from 'react-native';
 
 const reactNativePackage = require('react-native/package.json');
@@ -140,9 +141,9 @@ export default class Slideshow extends Component {
       let change = 0;
 
       if (relativeDistance < -0.5 || (relativeDistance < 0 && vx <= 0.5)) {
-        change = 1;
+        change = ReactNative.I18nManager.isRTL && Platform.OS === 'ios' ? -1 : 1;
       } else if (relativeDistance > 0.5 || (relativeDistance > 0 && vx >= 0.5)) {
-        change = -1;
+        change = ReactNative.I18nManager.isRTL && Platform.OS === 'ios' ? 1 : -1;
       }
       const position = this._getPosition();
       if (position === 0 && change === -1) {
